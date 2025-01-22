@@ -1,6 +1,4 @@
-#-*coding: iso-8859-1 -*-
-
-def basic_example_for_loop():
+def current_fruit():
         """
         Basic example of a for loop:
         Iterates through a list of fruits and prints them.
@@ -9,4 +7,4 @@ def basic_example_for_loop():
         for fruit in fruits:
             print(f"The current fruit is: {fruit}")
 
-basic_example_for_loop()
+current_fruit()

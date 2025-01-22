@@ -2,13 +2,13 @@
 
 def validate_registration(name, age, email):
     if not name.strip():
-    print("Error: The name cannot be empty.")
-    elif age < 18:
+        print("Error: The name cannot be empty.")
+    elif age <= 18:
         print("Error: You must be older than 18 to register.")
-    elif "@" not in email or "." not in email:
+    elif not "@" in email or not "." in email:
         print("Error: The email is not valid.")
     else:
-        print("Registration successful. Welcome, {}!".format(name))
+        print(f"Registration successful. Welcome, {name}!")
 
 # Pruebas
 validate_registration("", 20, "usuario@gmail.com")  # Error: The name cannot be empty.

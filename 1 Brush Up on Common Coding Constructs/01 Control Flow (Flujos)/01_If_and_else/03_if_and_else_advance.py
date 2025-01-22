@@ -2,11 +2,11 @@
 
 def is_even_or_odd():
 
-    number = input(">>> Enter a number: ")
+    number = int(input(">>> Enter a number: "))
 
-    if number % 2 == 0:
-        return "The number is even."
+    if number %2 == 0:
+        return print("The number is even.")
     else:
-        return "The number is odd."
+        return print("The number is odd.")
     
 is_even_or_odd()
