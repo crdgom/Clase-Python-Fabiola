@@ -16,7 +16,7 @@ def parse_formula(formula):
             if count == "":#Si no encuentra digitos entonces count es igual a 1
                 #Aqui me surge la duda, si declaramos a count como string y leugo le quiermos asignar un uno va a dar error yo parsearia el count a string antes de agregarle el 1 str(count)
                 count = 1
-            elements[element] = int(count)#Llena la lista con los numeros que encontro despues de haberlos pasado a enteros
+            elements[element] = int(count)#Llena el diccionario cn el elemento y su cantidad 
         else: #Aqui no encuntro como los esta mostrando dberia concatenar la cantidad del los elemtnos al final 
             i += 1
     return elements
