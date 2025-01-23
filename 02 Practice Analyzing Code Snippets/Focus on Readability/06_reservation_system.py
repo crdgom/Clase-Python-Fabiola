@@ -9,9 +9,9 @@ class Reservation: #Le cambiaria el nombre de create_reservation a Reservation
    
     def display_reservation(self):
         """Muestra los detalles de la reserva."""
-        print(f"Reserva a nombre de {self.name} para {self.guests} personas a las {self.time}.")
+        print(f"Reserva a nombre de {self.name} para {self.guests} personas a las {self.time}.") #con un ckeck in el x/x/x y ckeckput x/x/x
 
-reservations = [
+reservations = [ #seria mejor guardar esta informacion en un dict
     Reservation("Carlos", 2, "7:00 PM"),
     Reservation("Ana", 4, "8:00 PM"),
     Reservation("Luis", 3, "9:00 PM")
@@ -19,4 +19,5 @@ reservations = [
 
 # Mostrar reservas
 for reservation in reservations:
-    reservation.display_reservation()
+    reservation.display_reservation() #No mostraria todas las reservas por temas de escalabilidad solo preguntaria por el nombre del 
+    #huesped y desplegaria esa uicamente 
