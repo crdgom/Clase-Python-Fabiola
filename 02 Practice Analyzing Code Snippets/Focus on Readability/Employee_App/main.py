@@ -3,6 +3,9 @@
 from employee import create_employee, list_employees, update_employee, delete_employee
 from utils import get_int_input, get_str_input
 
+__version__ = '0.1'
+__author__ = '@crdgom'
+
 def show_menu():
     """Displays the main menu."""
     print("\n--- Main Menu ---")

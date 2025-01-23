@@ -1,3 +1,5 @@
+__version__ = '0.1'
+__author__ = '@crdgom'
 # Module to handle employee-related operations
 
 employees = []  # List to store employee information

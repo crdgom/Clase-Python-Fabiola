@@ -1,3 +1,6 @@
+__version__ = '0.1'
+__author__ = '@crdgom'
+
 # Utility functions for input handling
 
 def get_int_input(prompt):
