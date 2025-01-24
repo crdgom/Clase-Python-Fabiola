@@ -14,3 +14,14 @@ xxxxxxx(6)
 1 3 3 1 
 
 """
+
+def buscador_palindromos(s):
+    n = len(s) #evaluates the string size
+    for i in range(n):#this string size will be used to iterarte wihtin the hole string
+        for j in range(i, n): #here we are going to select an especific section of the string
+            subcadena = s[i:j+1] #this section will colect the range of the string, first iteraction range(0,1),range(0,2),range(0,3) etc
+            if subcadena == subcadena[::-1]:#whenever we findout that the reversed section of the substring is equal to the substring we print the substring
+                print(f"Se encontraron los siguientes palindromos dentro de la cadena: {subcadena}")
+
+xxxxxxxx("abbaacc")
+
