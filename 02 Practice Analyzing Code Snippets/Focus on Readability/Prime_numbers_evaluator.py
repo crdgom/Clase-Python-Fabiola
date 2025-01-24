@@ -9,4 +9,4 @@ def is_it_prime(num):#Cambiaria el nombre a pregunta: is_it_prime(num)
             return print(f"El numero {num} SI es primo")
 
 # Ejemplo de uso
-print("¿Es primo?", is_it_prime(8))
+is_it_prime(7)
