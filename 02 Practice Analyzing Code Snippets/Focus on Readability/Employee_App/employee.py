@@ -39,3 +39,16 @@ def delete_employee(employee_id):
             employees = [e for e in employees if e["id"] != employee_id]
             return f"Employee with ID {employee_id} deleted."
     return f"Employee with ID {employee_id} not found."
+
+
+
+    a = 0
+
+    def x:
+        a = 2
+
+    return x
+
+print(a)
+
+x()
