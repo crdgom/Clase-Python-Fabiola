@@ -23,5 +23,29 @@ def buscador_palindromos(s):
             if subcadena == subcadena[::-1]:#whenever we findout that the reversed section of the substring is equal to the substring we print the substring
                 print(f"Se encontraron los siguientes palindromos dentro de la cadena: {subcadena}")
 
-xxxxxxxx("abbaacc")
+xxxxxxxx("abbaacc") abbaacc
+
+def subcadenas_palindromas_optimizado(s):
+    n = len(s)
+    palindromos = []
+
+    # Matriz dinámica para almacenar si s[i:j+1] es palíndromo
+    es_palindromo = [[False] * n for _ in range(n)]
+
+    for longitud in range(n):  # Longitud de la subcadena
+        for i in range(n - longitud):
+            j = i + longitud
+            if s[i] == s[j]:
+                if longitud <= 1:  # Subcadenas de longitud 1 o 2
+                    es_palindromo[i][j] = True
+                else:  # Depende de los caracteres internos
+                    es_palindromo[i][j] = es_palindromo[i + 1][j - 1]
+            if es_palindromo[i][j]:
+                palindromos.append(s[i:j+1])
+
+    # Imprimir los palíndromos encontrados
+    for p in palindromos:
+        print(f"Palíndromo: {p}")
+
+subcadenas_palindromas_optimizado("abbaacc")
 

@@ -10,7 +10,7 @@ xxxxxxx(6)
 
 
 
-def xxxxxxxx(s):
+""" def xxxxxxxx(s):
     n = len(s)
     for i in range(n):
         for j in range(i, n):
@@ -131,3 +131,4 @@ def xxxxxxxxxxxxxxx(n):
         print(num, end=" ")
 
 xxxxxxxxxxxxxxx(10)
+ """
