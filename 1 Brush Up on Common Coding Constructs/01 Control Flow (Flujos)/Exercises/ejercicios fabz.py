@@ -23,5 +23,25 @@ def buscador_palindromos(s):
             if subcadena == subcadena[::-1]:#whenever we findout that the reversed section of the substring is equal to the substring we print the substring
                 print(f"Se encontraron los siguientes palindromos dentro de la cadena: {subcadena}")
 
+  s
+
 xxxxxxxx("abbaacc")
+º         (11111111)-1=?
+            111111
+             11111
+              1111
+                11
+
+
+def xxxxxxxxxxx(n):
+    for i in range(1, n+1):
+        if i % 2 == 0:
+            print(" " * (n-i) + "*" * i)
+        else:
+            print("*" * i)
+
+xxxxxxxxxxx(6)
+
+
+
 
